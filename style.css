@@ -86,7 +86,7 @@ span {
     width: 100%;
     padding: 2rem 9%;
     background: var(--secondary-color);
-    color: var(--font-color);
+    color: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,6 +117,21 @@ span {
     align-items: center;
     /* z-index:auto; */
 }
+.projects a {
+    color: var(--bg-color);
+}
+
+.contact {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index:auto; */
+}   
 
 .contact-form .form-input {
     display: flex;
