@@ -79,3 +79,48 @@ h1, h2, h3  {
 span {
     color: var(--font-color);
 }
+
+.about {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--secondary-color);
+    color: var(--font-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index:auto; */
+}
+
+.skills {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index:auto; */
+}
+
+.projects {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--secondary-color);
+    color: var(--font-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index:auto; */
+}
+
+.contact-form .form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
