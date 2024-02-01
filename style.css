@@ -1,18 +1,91 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
+ * {
+    html { box-sizing: border-box; }
+    
+    *, *:before, *:after { box-sizing: inherit; }
+    
+ }
+/* *,
 *:before,
 *:after {
     box-sizing: inherit;
-}
+} */
 
 :root {
-    --main-color: Black;
-    --secondary-color: hotpink;
-    --font-color: grey;
-
+    
+    --bg-color: rgb(11, 11, 11);
+    --secondary-color: rgb(138, 137, 137);
+    --font-color: rgb(242, 28, 135);
+    --font2-color: white;
+    
     --main-font: "Poppins", sans-serif;
     --body-font:
+}
+/* html {
+    box-sizing: border-box;
+} */
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a:visited {
+	color: inherit;
+}
+
+html {
+    font-size: 26px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    font-family: var(--main-font);
+
+
+}
+
+/* images */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h1, h2, h3  {
+    font-weight: bold;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-decoration: none;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.home {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:auto;
+}
+span {
+    color: var(--font-color);
 }
