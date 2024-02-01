@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --main-color: Black;
+    --secondary-color: hotpink;
+    --font-color: grey;
+
+    --main-font: "Poppins", sans-serif;
+    --body-font:
+}
