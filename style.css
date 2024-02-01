@@ -4,11 +4,6 @@
     *, *:before, *:after { box-sizing: inherit; }
     
  }
-/* *,
-*:before,
-*:after {
-    box-sizing: inherit;
-} */
 
 :root {
     
@@ -20,9 +15,6 @@
     --main-font: "Poppins", sans-serif;
     --body-font:
 }
-/* html {
-    box-sizing: border-box;
-} */
 
 a {
 	text-decoration: none;
@@ -47,8 +39,6 @@ body {
     background-color: var(--bg-color);
     color: var(--secondary-color);
     font-family: var(--main-font);
-
-
 }
 
 /* images */
@@ -84,7 +74,7 @@ h1, h2, h3  {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index:auto;
+    /* z-index:auto; */
 }
 span {
     color: var(--font-color);
