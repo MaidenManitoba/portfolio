@@ -58,6 +58,15 @@ h1, h2, h3  {
     font-weight: bold;
 }
 
+button {
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
 .top-nav {
     display: flex;
     flex-direction: row;
@@ -140,6 +149,7 @@ span {
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 .form-input button {
