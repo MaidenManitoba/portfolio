@@ -30,6 +30,9 @@ a:focus {
 a:visited {
 	color: inherit;
 }
+.wrapper {
+    width: 90%;
+}
 
 html {
     font-size: 26px;
@@ -61,6 +64,7 @@ h1, h2, h3  {
 button {
     background-color: var(--font-color);
     color: var(--bg-color);
+    font-weight: bold;
     align-items: center;
     border-radius: 10px;
     padding: 20px;
@@ -77,23 +81,20 @@ button {
 }
 
 .home {
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     width: 100%;
     padding: 2rem 9%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* z-index:auto; */
 }
 span {
     color: var(--font-color);
 }
 
 .about {
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 2rem 9%;
     background: var(--secondary-color);
@@ -101,28 +102,21 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* z-index:auto; */
 }
 
 .skills {
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 2rem 9%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* z-index:auto; */
 }
 .skills-list{
     list-style-type: none;
-   
 }
 
 .projects {
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 2rem 9%;
     background: var(--secondary-color);
@@ -130,7 +124,6 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* z-index:auto; */
 }
 .projects a {
     color: var(--bg-color);
@@ -153,9 +146,5 @@ span {
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-radius: 10px;
-}
-
-.form-input button {
-    align-items: center;
+    width: 50%;
 }
