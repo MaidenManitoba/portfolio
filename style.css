@@ -70,7 +70,7 @@ button {
     padding: 20px;
     margin: 0 auto;
 }
-
+/* navigation */
 .top-nav {
     display: flex;
     flex-direction: row;
@@ -79,7 +79,7 @@ button {
     gap: 20px;
     list-style-type: none;
 }
-
+/* home section */
 .home {
     /* top: 0;
     left: 0; */
@@ -93,7 +93,7 @@ button {
 span {
     color: var(--font-color);
 }
-
+/* about section */
 .about {
     width: 100%;
     padding: 2rem 9%;
@@ -103,7 +103,7 @@ span {
     justify-content: space-between;
     align-items: center;
 }
-
+/* skills section */
 .skills {
     width: 100%;
     padding: 2rem 9%;
@@ -115,7 +115,7 @@ span {
 .skills-list{
     list-style-type: none;
 }
-
+/* projects */
 .projects {
     width: 100%;
     padding: 2rem 9%;
@@ -128,7 +128,7 @@ span {
 .projects a {
     color: var(--bg-color);
 }
-
+/* contact */
 .contact {
     top: 0;
     left: 0;
