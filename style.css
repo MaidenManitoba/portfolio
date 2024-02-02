@@ -44,6 +44,7 @@ body {
     font-family: var(--main-font);
     min-height: 90vh;
     font-size: 62.5%;
+    line-height: 1.5rem;
 }
 
 section {
@@ -58,12 +59,14 @@ img {
     display: block;
 }
 
-h1 {
-    font-size: 4.5rem;
-}
-
 h1, h2, h3  {
     font-weight: bold;
+    font-size: 1.25rem;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
 }
 
 button {
@@ -74,6 +77,9 @@ button {
     /* border-radius: 10px; */
     padding: 20px;
     margin: 0 auto;
+}
+button, input {
+    overflow: visible;
 }
 /* navigation */
 .top-nav {
@@ -101,29 +107,46 @@ span {
 /* about section */
 .about {
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem ;
+    margin: 0 auto;
     background: var(--secondary-color);
     color: var(--bg-color);
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    line-height: 0.875rem;
+}
+
+.about-content {
     align-items: center;
 }
 /* skills section */
 .skills {
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.skills-list{
+.skills-list {
     list-style-type: none;
+}
+
+.skills-title{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills h2 {
+    align-items: center;
 }
 /* projects */
 .projects {
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem;
     background: var(--secondary-color);
     color: var(--font-color);
     display: flex;
@@ -135,13 +158,11 @@ span {
 }
 /* contact */
 .contact {
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem;
     background: var(--bg-color);
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     align-items: center;
     /* z-index:auto; */
 }   
@@ -153,3 +174,10 @@ span {
     flex-wrap: wrap;
     width: 50%;
 }
+
+.footer.text {
+    font-size: 0.5 rem;
+}
+
+
+
