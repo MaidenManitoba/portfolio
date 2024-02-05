@@ -59,7 +59,10 @@ img {
     display: block;
 }
 
-h1, h2, h3  {
+h1 {
+    align-items: center;
+}
+h1, h2  {
     font-weight: bold;
     font-size: 1.25rem;
 }
@@ -67,6 +70,10 @@ h1, h2, h3  {
 h2 {
     display: flex;
     justify-content: center;
+}
+
+.heading {
+    gap: 10px;
 }
 
 button {
@@ -120,6 +127,7 @@ span {
 .about-content {
     align-items: center;
 }
+ 
 /* skills section */
 .skills {
     width: 100%;
@@ -180,4 +188,6 @@ span {
 }
 
 
-
+@media (max-width: 780px) {
+    
+}
