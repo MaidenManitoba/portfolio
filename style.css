@@ -158,6 +158,9 @@ section {
 
 /* home section */
 .home-wrapper{
+    width: 100%;
+    padding: 2rem;
+    background: var(--bg-color);
     display: flex;
     justify-content: center;
 }
@@ -166,15 +169,14 @@ span {
     color: var(--font-color);
 }
 /* about section */
-.about {
+.about-wrapper {
     width: 100%;
     padding: 2rem ;
     margin: 0 auto;
     background: var(--secondary-color);
     color: var(--bg-color);
-    /* display: flex; */
-    /* justify-content: space-between; */
-    align-items: center;
+    display: flex; 
+    justify-content: center;
     line-height: 0.875rem;
 }
 
@@ -184,9 +186,9 @@ span {
  
 /* skills section */
 .skills-wrapper {
-    /* width: 100%;
+    width: 100%;
     padding: 2rem;
-    background: var(--bg-color); */
+    background: var(--bg-color);
     display: flex;
     justify-content: center;
     
@@ -209,30 +211,36 @@ span {
     align-items: center;
 }
 /* projects */
-.projects {
+.projects-wrapper {
     width: 100%;
     padding: 2rem;
     background: var(--secondary-color);
     color: var(--font-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-.projects a {
-    color: var(--bg-color);
-    font-size: ;
-}
+/* .projects a {
+    color: var(--font3-color); */
+    /* display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: var(--font3-color);
+
+} */
 
 .itlct-project {
     display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
     padding: 20px;
+    color: var(--font3-color);
+   
 }
 .itlct-project a:hover {
     color: var(--font-color);
 }
 /* contact */
-.contact {
+.contact-wrapper {
     width: 100%;
     padding: 2rem;
     background: var(--bg-color);
