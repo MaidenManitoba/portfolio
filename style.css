@@ -1,10 +1,13 @@
  * {
-    margin: 0;
-    padding: 0;
+   
     html { box-sizing: border-box; }
     
     *, *:before, *:after { box-sizing: inherit; }
 
+ }
+
+ body {
+    margin: 0;
  }
 
 :root {
@@ -22,26 +25,34 @@
     --heavy-weight:600;
     --heaviest-weight:700;
     /* font sizes */
-
+    --font-xs:2.4rem;
+    --font-sm:2.8rem;
+    --font-med:3.6rem;
+    --font-lg:4.6rem;
+    --font-xl:5.6rem;
+    /* spacing */
+    --spacing-xs: 10px;
+    --spacing-s: 20px;
+    --spacing-med: 40px;
+    --spacing-lg: 60px;
+    --spacing-xl: 100px;
     
     /* wrappers */
     --desktop-wrapper-width: 90%;
     --mobile-wrapper-width: 95%;
 }
 
-.wrapper {
-    width: var(--mobile-wrapper-width);
-}
+
 
 html {
     font-size: 1.875rem;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
 body {
+    width: var(--mobile-wrapper-width);
     background-color: var(--bg-color);
     color: var(--secondary-color);
     font-family: var(--main-font);
@@ -49,13 +60,23 @@ body {
     font-size: 62.5%;
     line-height: 1.5rem;
 }
+.wrapper {
+    width: var(--mobile-wrapper-width);
+}
+img {
+    max-width: 100%;
+    display: block;
+}
 li {
     list-style: none;
 }
 .header-wrapper {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    margin: 15px 5px;
+
 }
 h1 {
     display: flex;
@@ -157,7 +178,7 @@ section {
 }
 
 /* home section */
-.home-wrapper{
+#home {
     width: 100%;
     padding: 2rem;
     background: var(--bg-color);
@@ -169,7 +190,7 @@ span {
     color: var(--font-color);
 }
 /* about section */
-.about-wrapper {
+#about {
     width: 100%;
     padding: 2rem ;
     margin: 0 auto;
@@ -185,7 +206,7 @@ span {
 }
  
 /* skills section */
-.skills-wrapper {
+#skills {
     width: 100%;
     padding: 2rem;
     background: var(--bg-color);
@@ -197,7 +218,7 @@ span {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .skills-title{
