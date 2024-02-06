@@ -112,7 +112,10 @@ h2 {
     display: flex;
     justify-content: center;
 }
-
+p {
+    width: 75%;
+    text-align: center;
+ }
 .heading {
     gap: 10px;
 }
@@ -154,7 +157,6 @@ h2 {
     font-size: 1rem;
     font-weight: var(--reg-weight);
     color: var(--font-color);
-    /* border-bottom: var(--border-width-link) solid var(--font-color); */
 }
 
 .nav-link:hover {
@@ -170,7 +172,7 @@ button {
     font-weight: bold;
     align-items: center;
     /* border-radius: 10px; */
-    padding: 20px;
+    padding: var(--spacing-s);
     margin: 0 auto;
 }
 
@@ -236,18 +238,28 @@ span {
 }
 .skills-list {
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     /* justify-content: center; */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skills-title{
     list-style-type: none;
-    /* display: flex;
-    flex-direction: column;
+    font-size: var(--font-sm);
+    display: flex;
+    flex-direction: row;
     justify-content: center; */
 }
 
+.skills-title p {
+    font-size: 20px;
+}
+
+.skills-title span {
+    font-size: 3.5rem;
+}
 .skills h2 {
     align-items: center;
 }
@@ -329,8 +341,8 @@ span {
         justify-content: flex-end;
         text-decoration: none;
         margin: 0 auto;
-        padding: 20px;
-        gap: 20px;
+        padding: var(--spacing-s);
+        gap: var(--spacing-s);
         list-style-type: none;
     }
 
