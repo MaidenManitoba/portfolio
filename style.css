@@ -36,6 +36,11 @@
     --spacing-med: 40px;
     --spacing-lg: 60px;
     --spacing-xl: 100px;
+    /* line heights */
+    --line-height-sm: 26px;
+    --line-height-med: 32px;
+    --line-height-lg: 40px;
+    --line-height-xl: 50px
     
     /* wrappers */
     --desktop-wrapper-width: 90%;
@@ -49,13 +54,12 @@ html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    font-family: var(--main-font);
 }
 
 body {
-    width: var(--mobile-wrapper-width);
     background-color: var(--bg-color);
     color: var(--secondary-color);
-    font-family: var(--main-font);
     min-height: 90vh;
     font-size: 62.5%;
     line-height: 1.5rem;
@@ -65,6 +69,7 @@ body {
 }
 img {
     max-width: 100%;
+    height: auto;
     display: block;
 }
 li {
@@ -79,12 +84,15 @@ li {
 
 }
 h1 {
+    font-weight: var(--heaviest-weight);
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-h1, h2  {
-    font-weight: bold;
+    line-height: var();
+} 
+
+h2  {
+    font-weight: var(--heavy-weight);
     font-size: 1.25rem;
     /* display: flex;
     flex-direction: column;
