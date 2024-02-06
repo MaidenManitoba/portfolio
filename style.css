@@ -74,6 +74,7 @@ body {
 }
 .wrapper {
     width: var(--mobile-wrapper-width);
+    margin: 0 auto;
 }
 img {
     max-width: 100%;
@@ -152,13 +153,16 @@ h2 {
 .nav-link {
     font-size: 1rem;
     font-weight: var(--reg-weight);
-    /* color: var(--font-color); */
-    border-bottom: var();
+    color: var(--font-color);
+    /* border-bottom: var(--border-width-link) solid var(--font-color); */
 }
 
 .nav-link:hover {
-    color: var(--font-color);
+    /* color: var(--font-color); */
+    border-bottom: var(--border-width-link) solid var(--font-color);
+    text-decoration: none;
 }
+
 
 button {
     background-color: var(--font-color);
@@ -181,7 +185,6 @@ a {
 
 a:hover,
 a:focus {
-    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -249,7 +252,7 @@ span {
     align-items: center;
 }
 /* projects */
-.projects-wrapper {
+#projects {
     width: 100%;
     padding: 2rem;
     background: var(--secondary-color);
@@ -269,16 +272,18 @@ span {
 
 .itlct-project {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 20px;
     color: var(--font3-color);
    
 }
 .itlct-project a:hover {
-    color: var(--font-color);
+    /* color: var(--font-color); */
+    border-bottom: var(--border-width-link) solid var(--font-color);
+    text-decoration: none;
 }
 /* contact */
-.contact-wrapper {
+#contact {
     width: 100%;
     padding: 2rem;
     background: var(--bg-color);
