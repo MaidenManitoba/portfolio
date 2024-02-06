@@ -40,11 +40,19 @@
     --line-height-sm: 26px;
     --line-height-med: 32px;
     --line-height-lg: 40px;
-    --line-height-xl: 50px
+    --line-height-xl: 50px;
+    /* borders */
+    --border-radius: 10px;
+    --border-width-link: 2px;
     
     /* wrappers */
     --desktop-wrapper-width: 90%;
     --mobile-wrapper-width: 95%;
+
+    /* Media Queries */
+    --mq-width-desktop-max: 1024px;
+    --mq-width-tablet-max: 768px;
+    --mq-width-phone-max: 400px;
 }
 
 
@@ -88,7 +96,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    line-height: var();
+    line-height: var(--line-height-xl);
 } 
 
 h2  {
@@ -144,7 +152,8 @@ h2 {
 .nav-link {
     font-size: 1rem;
     font-weight: var(--reg-weight);
-    color: var(--font-color);
+    /* color: var(--font-color); */
+    border-bottom: var();
 }
 
 .nav-link:hover {
