@@ -8,6 +8,8 @@
 
  body {
     margin: 0;
+    background-color: black;
+    color: white;
  }
 
 :root {
@@ -65,13 +67,13 @@ html {
     font-family: var(--main-font);
 }
 
-body {
+/* body {
     background-color: var(--bg-color);
     color: var(--secondary-color);
     min-height: 90vh;
     font-size: 62.5%;
     line-height: 1.5rem;
-}
+} */
 .wrapper {
     width: var(--mobile-wrapper-width);
     margin: 0 auto;
@@ -84,7 +86,7 @@ img {
 li {
     list-style: none;
 }
-.header-wrapper {
+.header {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -102,7 +104,7 @@ h1 {
 
 h2  {
     font-weight: var(--heavy-weight);
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -111,10 +113,12 @@ h2  {
 h2 {
     display: flex;
     justify-content: center;
+    line-height: 65px;
 }
 p {
     width: 75%;
     text-align: center;
+    margin: 0 auto;
  }
 .heading {
     gap: 10px;
@@ -203,7 +207,6 @@ section {
 #home {
     width: 100%;
     padding: 2rem;
-    background: var(--bg-color);
     display: flex;
     justify-content: center;
 }
@@ -216,8 +219,6 @@ span {
     width: 100%;
     padding: 2rem ;
     margin: 0 auto;
-    background: var(--secondary-color);
-    color: var(--bg-color);
     display: flex; 
     justify-content: center;
     line-height: 0.875rem;
@@ -231,9 +232,8 @@ span {
 #skills {
     width: 100%;
     padding: 2rem;
-    background: var(--bg-color);
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     
 }
 .skills-list {
@@ -271,11 +271,10 @@ span {
 #projects {
     width: 100%;
     padding: 2rem;
-    background: var(--secondary-color);
     color: var(--font-color);
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 /* .projects a {
     color: var(--font3-color); */
@@ -290,7 +289,8 @@ span {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    color: var(--font3-color);
+    color: white;
+    margin: 0 auto;
    
 }
 .itlct-project a:hover {
@@ -302,7 +302,7 @@ span {
 #contact {
     width: 100%;
     padding: 2rem;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
     /* display: flex;
     justify-content: space-between; */
     align-items: center;
@@ -328,7 +328,19 @@ span {
 }
 
 
+@media screen and (prefers-color-scheme: light) {
+    body {
+      background-color: white;
+      color: black;
+    }
+}
+
 @media only screen and (min-width: 768px) {
+
+    body {
+        background-color: white;
+        color: black;
+      }
     
     /* navigation */
     /* .nav {
@@ -359,4 +371,18 @@ span {
     .hamburger-menu {
         display: none;
     }
+
+    .itlct-project {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        color: black;
+        margin: 0 auto;
+       
+    }
+
+    .skills-title span:hover {
+        color: black;
+    }
+
 }
