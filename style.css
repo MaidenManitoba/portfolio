@@ -151,6 +151,7 @@ button, input {
 a {
     text-decoration: none;
     color: inherit;
+    width: fit-content;
 }
 
 a:hover,
@@ -362,6 +363,7 @@ span {
     /* color: var(--font-color); */
     border-bottom: var(--border-width-link) solid var(--font-color);
     text-decoration: none;
+
 }
 /* contact */
 #contact {
@@ -375,6 +377,7 @@ span {
 }   
 
 .contact-form {
+
     display: flex;
     justify-content: center;
 }
@@ -386,7 +389,12 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+   
     flex-wrap: wrap;
+}
+
+input[type=text]{
+    width: 100%;
 }
 
 .footer-text {
