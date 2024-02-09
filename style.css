@@ -120,6 +120,10 @@ p {
     margin: 0 auto;
 }
 
+ul {
+    padding: 0;
+}
+
 .heading {
     gap: 10px;
 }
@@ -333,7 +337,10 @@ span {
 .skills-title {
     list-style-type: none;
     font-size: var(--font-sm);
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 16px;
 }
 
 .skills-title p {
@@ -420,13 +427,6 @@ span {
       }
     
     /* navigation */
-    /* .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 1.5rem;
-        gap: 15px;
-    } */
 
     .nav {
         display: flex;
@@ -443,6 +443,8 @@ span {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        position: static;
+
     }
 
     .hamburger-menu {
