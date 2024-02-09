@@ -94,8 +94,18 @@ li {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 15px 5px;
+    margin: 15px auto;
 
+}
+
+
+.header p {
+    font-size: var(--font-xs);
+    font-weight: var(--heavy-weight);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: row;
 }
 
 h1 {
@@ -142,7 +152,7 @@ button, input {
 button {
     background-color: var(--font-color);
     color: var(--bg-color);
-    font-weight: var(--font-lg);
+    font-weight: var(--heavy-weight);
     align-items: center;
     border-radius: 10px;
     padding: var(--spacing-s);
@@ -171,9 +181,9 @@ a:visited {
 input[type="text"],
 input[type="email"],
 textarea {
-	border: 1px solid #c6c6c6;
+	border: 2px solid #c6c6c6;
 	border-radius: var(--border-radius);
-	padding: var(--spacing-sm) var(--spacing-sm);
+	padding: var(--spacing-med) var(--spacing-sm);
 	font-family: var(--font-main);
 }
 
@@ -217,6 +227,10 @@ textarea {
     text-decoration: none;
 }
 
+.nav p {
+    display: flex;
+    align-items: center;
+}
 
 .switch {
     position: relative;
@@ -425,7 +439,14 @@ span {
         background-color: white;
         color: black;
       }
-    
+
+      h1 {
+        font-size: var(--font-med);
+        line-height: var(--line-height-xxl);
+      }
+      img {
+        margin: 0 auto;
+      }
     /* navigation */
 
     .nav {
@@ -445,6 +466,19 @@ span {
         align-items: center;
         position: static;
 
+    }
+
+    .nav-link {
+        font-size: 30px;
+        font-weight: var(--heavy-weight);
+        color: var(--font-color);
+        margin: 0 auto;
+    }
+    
+    .nav-link:hover {
+        /* color: var(--font-color); */
+        border-bottom: var(--border-width-link) solid var(--font-color);
+        text-decoration: none;
     }
 
     .hamburger-menu {
