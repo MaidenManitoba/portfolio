@@ -24,6 +24,7 @@
      --heavy-weight:600;
      --heaviest-weight:700;
      /* font sizes */
+     --font-xxs: 1rem;
      --font-xs:2.4rem;
      --font-sm:2.8rem;
      --font-med:3.6rem;
@@ -40,11 +41,13 @@
     --line-height-med: 32px;
     --line-height-lg: 40px;
     --line-height-xl: 50px;
+    --line-height-xxl: 60px;
     /* borders */
     --border-radius: 10px;
     --border-width-link: 2px;
     
     /* width */
+    --min-width: 320px;
     --max-width: 1440px;
     /* wrappers */
     --desktop-wrapper-width: 90%;
@@ -64,7 +67,7 @@ body {
 
 
 html {
-    font-size: 1.875rem;
+    /* font-size: 1.875rem; */
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -86,6 +89,7 @@ img {
 li {
     list-style: none;
 }
+
 .header {
     display: flex;
     justify-content: flex-end;
@@ -96,16 +100,13 @@ li {
 
 h1 {
     font-weight: var(--heaviest-weight);
-    font-size: var(--font-xxs);
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column; */
-    line-height: var(--line-height-xl);
+    font-size: var(--font-xs);
+    line-height: var(--line-height-xxl);
 } 
 
 h2 {
     font-weight: var(--heavy-weight);
-    font-size: var(--font-xxs);
+    font-size: var(--font-xs);
     display: flex;
     justify-content: center;
     line-height: 65px;
@@ -139,9 +140,9 @@ button {
     color: var(--bg-color);
     font-weight: bold;
     align-items: center;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     padding: var(--spacing-s);
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 button, input {
@@ -335,8 +336,8 @@ span {
 } */
 /* projects */
 #projects {
-    width: 100%;
-    padding: 2rem;
+    /* width: 100%; */
+    /* padding: 2rem; */
     color: var(--font-color);
     /* display: flex;
     justify-content: center;
@@ -350,6 +351,10 @@ span {
     color: var(--font3-color);
 
 } */
+
+.projects a {
+   margin: 0 auto;
+}
 
 .itlct-project {
     display: flex;
@@ -377,7 +382,6 @@ span {
 }   
 
 .contact-form {
-
     display: flex;
     justify-content: center;
 }
@@ -389,23 +393,21 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
     flex-wrap: wrap;
+    align-items: center;
 }
 
-input[type=text]{
-    width: 100%;
+.form-input input{
+    max-width: 80%;
+    
 }
 
 .footer-text {
+    font-size: var(--font-xxs);
     font-size: 0.5 rem;
     margin: 40px auto;
     padding: 10px;
 }
-/* .footer-text p {
-   margin: 0 auto;
- } */
-
 
 @media screen and (prefers-color-scheme: light) {
     body {
