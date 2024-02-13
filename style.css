@@ -142,15 +142,18 @@ button {
     color: var(--bg-color);
     font-weight: var(--heavy-weight);
     align-items: center;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: var(--spacing-s);
-    margin: 20px auto;
+    margin: 60px auto;
 }
 
 button, input {
     overflow: visible;
 }
 
+button:hover {
+    color: white;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -333,6 +336,8 @@ span {
     color: var(--font-color);
 }
 
+
+
 /* about section */
 #about {
     padding: 2rem ;
@@ -350,14 +355,21 @@ span {
     font-weight: 500;
 }
 
+.about-content a:hover{
+    transform: scale(1.2);
+    color: var(--font-color);
+}
+
 .social {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 15px;
 
 }
 .social img{
     height: 50px;
+    gap: 10px;
 }
 
  
@@ -410,6 +422,7 @@ span {
 
 .skills-title span:hover {
     color: white;
+    transform: scale(1.5);
 }
 
 /* projects */
@@ -457,6 +470,24 @@ span {
     align-items: center;
 }
 
+.contact a {
+    font-size: var(--font-xxs);
+    font-weight: var(--heavy-weight);
+    text-transform: uppercase;
+    /* margin-top: 20%; */
+    padding-top: 100px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contact a:hover{
+    transform: scale(1.2);
+    color: var(--font-color);
+}
+
 /* .form-input input{
     max-width: 80%;
     
@@ -478,11 +509,14 @@ span {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-    .skills-wrap {
+    /* .skills-wrap {
         display: flex;
         flex-direction: row;
         justify-content: center;
         
+    } */
+    .skills-title {
+        flex-basis: 50%;
     }
 }
 
@@ -538,6 +572,7 @@ span {
     
     .nav-link:hover {
         /* color: var(--font-color); */
+        /* transform: scale(1.2); */
         border-bottom: var(--border-width-link) solid var(--font-color);
         text-decoration: none;
     }
@@ -548,6 +583,11 @@ span {
 
     .hamburger-menu {
         display: none;
+    }
+
+    .social a img:hover {
+        transform: scale(1.2);
+        color: var(--font-color);
     }
 
     .about-content {
@@ -571,6 +611,7 @@ span {
 
     .skills-title span:hover {
         color: black;
+        transform: scale(1.5);
     }
     .skills {
         display: flex;
@@ -580,9 +621,9 @@ span {
 
     .skills-list {
         display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
-        width: 50%;
+        width: 100%;
 		/* gap: 10%; */
 	}
     
@@ -595,6 +636,29 @@ span {
 }
 
 @media only screen and (min-width: 1024px) {
+
+    h1 {
+        font-size: var(--font-lg);
+        line-height: 80px;
+    }
+    
+    h2 {
+        font-size: var(--font-med);
+        line-height: var(--line-height-xxl);
+    }
+    img {
+        margin: 0 auto;
+    }
+
+    .nav p {
+        font-size: 40px;
+    }
+
+    .nav-link {
+        font-size: 40px;
+        
+    }
+
     
     .skills-wrap{
         display: flex;
