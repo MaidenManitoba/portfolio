@@ -545,8 +545,8 @@ span {
 }
 /* skills links */
 .skills-title {
-    border: 2px solid red;
-    min-width: 300px;
+    /* border: 2px solid red; */
+    /* min-width: 300px; */
     list-style-type: none;
     font-size: var(--font-sm);
     display: flex;
