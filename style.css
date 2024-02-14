@@ -357,6 +357,16 @@ section {
     fill: black;
 }
 
+.linkedin-icon:hover {
+    transform: scale(1.5);
+    color: var(--font-color);
+}
+
+.github-icon:hover{
+    transform: scale(1.5);
+    color: var(--font-color);
+}
+
 .home-content {
     display: flex;
     justify-content: center;
