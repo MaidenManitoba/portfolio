@@ -184,6 +184,18 @@ textarea {
     width: 100%;
 	resize: vertical;
 }
+
+/* Global Hidden Class */
+.hidden {
+	display: none;
+}
+
+/* custom disable scroll class: for modal functionality */
+.disable-scroll {
+	overflow: hidden;
+}
+
+
 /* lines for hamburger menu */
 .line {
     display: block;
@@ -385,6 +397,102 @@ span {
     transform: scale(1.2);
     color: var(--font-color);
 }
+
+/* read me modal */
+
+/* positioning for body to stop scroll when modal is open */
+.fixed {
+	overflow: hidden;
+}
+
+/* modal overlay */
+.overlay-read-me {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(3px);
+	z-index: 1;
+}
+
+.modal {
+	width: 90%;
+	max-width: 1100px;
+	max-height: 90vh;
+	margin: 0 auto;
+	padding: var(--spacing-s);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 2vh;
+	background-color: white;
+	color: black;
+	border: 1px solid white;
+	border-radius: 4px;
+	z-index: 30;
+}
+
+.modal-wrapper {
+	position: relative;
+}
+
+.modal-content {
+	overflow-y: scroll;
+	max-height: 65vh;
+}
+
+.modal-scroll {
+	max-height: calc(85vh 300px);
+}
+
+/* modal text content */
+.modal p {
+	color: black;
+	margin: var(--spacing-s);
+}
+
+.modal-header h4 {
+	text-align: center;
+	color: black;
+	margin-bottom: 0px;
+}
+
+.btn-close {
+	position: absolute;
+	right: -20px;
+	top: -90px;
+}
+
+.btn-close button {
+	border: none;
+	background-color: transparent;
+}
+
+.btn-close svg {
+	width: 32px;
+	height: 32px;
+}
+
+/*read me button */
+.btn-read-me {
+	background-color: transparent;
+	color: white;
+	border: none;
+	margin: var(--spacing-med) 0;
+	font-size: 20px;
+}
+
+/* hover effect on all footer links */
+.btn-read-me:hover {
+	border-bottom: 2px solid var(--color-white);
+}
+
+
+
 /* social links */
 .social {
     display: flex;
@@ -694,6 +802,8 @@ span {
         font-size: 2rem;
         font-weight: var(--heavy-weight);
     }
+
+    
 }
 
 @media only screen and (min-width: 1024px) {
