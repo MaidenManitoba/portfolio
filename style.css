@@ -86,6 +86,7 @@ html {
     width: var(--mobile-wrapper-width);
     max-width: var(--max-width);
     margin: 0 auto;
+    /* height: 75vh; */
 }
 
 img {
@@ -298,10 +299,10 @@ nav .img-container {
 }
 
 #nav-links a {
-	color: var(--color-white);
+	color: white;
 	text-decoration: none;
-	font-weight: var(--font-weight-regular);
-	font-size: var(--font16);
+	font-weight: var(--reg-weight);
+	font-size: 20px;
 }
 #nav-links a:hover {
     transform: scale(1.5);
@@ -313,15 +314,26 @@ nav .img-container {
 	display: hidden;
 }
 
-
-
-
+/* sr only custom class  */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 /* switch button for dark/light theme */
+
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
+    width: 100px;
     height: 34px;
 }
 .switch input {
@@ -337,7 +349,7 @@ nav .img-container {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: black;
+    background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -349,7 +361,7 @@ nav .img-container {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: black;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -365,7 +377,7 @@ input:focus + .slider {
 input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    transform: translateX(65px);
 }
   
   /* Rounded sliders */
@@ -375,10 +387,10 @@ input:checked + .slider:before {
   
 .slider.round:before {
     border-radius: 50%;
-}
+} */
   /* main sections */
 section {
-    min-height: 65vh;
+    min-height: 95vh;
     padding: 10rem 2rem;
 }
 
@@ -709,6 +721,22 @@ span {
         font-weight: 500;
     }
 
+    .slider {
+  
+        background-color: black;
+       
+    }
+    
+    .slider:before {
+
+        background-color: white;
+       
+    }
+    
+    input:checked + .slider {
+        background-color: black;
+    }
+    
     .top-bar {
         background-color: white;
         color: black;
@@ -831,6 +859,10 @@ span {
     .about-content p {
         font-size: 20px;
         font-weight: 500;
+    }
+
+    .slider {
+        color: black;
     }
 
     .itlct-project {

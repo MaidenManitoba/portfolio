@@ -32,6 +32,19 @@ mobileMenu.addEventListener("click", function () {
 	mobileOpen.classList.toggle("hidden");
 });
 
+
+// light/dark mode
+const switchPage = document.querySelector(".switch");
+// Switch to Light Mode
+switchPage.switchLight = () => {
+    const toggleLight = $('#light-dark');
+
+    toggleLight.on('click', function(){
+        $('body').toggleClass('light');
+
+    })
+}
+
 // modal variables
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay-read-me");
