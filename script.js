@@ -2,15 +2,35 @@
 // the nav-menu goes to position static
 // 
 
-const burgerButton = document.getElementById("hamburger");
-const menu = document.getElementById("nav-menu");
-const navLinks = document.querySelector(".nav-link");
+// const burgerButton = document.getElementById("hamburger");
+// const menu = document.getElementById("nav-menu");
+// const navLinks = document.querySelector(".nav-link");
 
-burgerButton.addEventListener("click", function(){
-    menu.classList.toggle("nav-menu-present");
-    console.log(menu);
+// burgerButton.addEventListener("click", function(){
+//     menu.classList.toggle("nav-menu-present");
+//     console.log(menu);
+// });
+/* HEADER */
+
+// FOR BUTTON DROP DOWN
+
+// Make a function that will drop down a menu.
+// Clickable, and hover. (will go away when not clicked?)
+
+// IF CLICKED, THEN MENU SHOWS. MENU STAYS WHEN IS HOVERED. WHEN YOU MOVE OFF MENU THEN IT COLLAPSE.
+var mobileMenu = document.getElementById("mobile-menu");
+var navLinks = document.getElementById("nav-links-container");
+// X button
+var mobileClose = document.getElementById("mobileClose");
+// Hamburger
+var mobileOpen = document.getElementById("mobileOpen");
+
+mobileMenu.addEventListener("click", function () {
+	// Toggle Menu Appear
+	navLinks.classList.toggle("hidden");
+	mobileClose.classList.toggle("hidden");
+	mobileOpen.classList.toggle("hidden");
 });
-
 
 // modal variables
 const modal = document.querySelector(".modal");

@@ -154,6 +154,7 @@ button, input {
 button:hover {
     color: white;
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -195,84 +196,127 @@ textarea {
 	overflow: hidden;
 }
 
-
-/* lines for hamburger menu */
-.line {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3 ease-in-out;
-    transition: all 0.3 ease-in-out;
-    background-color: white;
-}
-
-.heading {
-    gap: 10px;
-}
-.header {
+.shan-co-logo {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    margin: 15px auto;
 
 }
 
-.header p {
-    font-size: var(--font-xs);
-    font-weight: var(--heavy-weight);
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    padding: 15px;
-    flex-direction: row;
-}
-.nav-menu {
-    position: absolute;
-    top: -1000px;
-    transition: 0.25s;
-}
-
-.nav-menu-present {
-    top: 5%;
-    right: 10%;
-    
-
-}
-
-.hamburger-menu {
-    /* align-items: center; */
-    padding: 15px;
-}
-/* navigation */
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.nav-item {
-    margin-left: 2rem;
-}
-
-.nav-link {
-    font-size: 1rem;
-    font-weight: var(--reg-weight);
-    color: var(--font-color);
-}
-
-.nav-link:hover {
-    /* color: var(--font-color); */
-    border-bottom: var(--border-width-link) solid var(--font-color);
-    text-decoration: none;
-}
-
-.nav p {
+.shan-co-logo p{
     font-size: 1.5rem;
-    display: flex;
-    align-items: center;
 }
+.top-bar {
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px 20px;
+}
+
+.dp-wrapper {
+	width: var(--mobile-wrapper-width);
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo-container {
+	display: flex;
+}
+
+/* desktop menu */
+.desktop-menu {
+	display: none;
+	flex-direction: row;
+	align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.desktop-nav {
+	list-style-type: none;
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.desktop-nav li {
+	padding: 10px 20px;
+}
+
+.dp-wrapper .button2 {
+	display: none;
+}
+
+/* mobile menu button style */
+#mobile-menu {
+	background-color: transparent;
+	border: 0px;
+	padding: 0;
+	align-items: center;
+	display: flex;
+	z-index: 11;
+}
+
+#mobile-menu svg {
+	fill: white;
+}
+
+/* menu container */
+#menu-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+nav .img-container {
+	max-width: 390px;
+	margin: auto;
+}
+
+#nav-links-container {
+	position: absolute;
+	top: 50px;
+	bottom: 0px;
+	right: -20px;
+	z-index: 10;
+}
+
+/* nav-links style */
+#nav-links {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	gap: 20px;
+	flex-direction: column;
+	background-color: black;
+	width: 200px;
+	height: auto;
+	overflow: hidden;
+	padding: 28px 55px 44px 46px;
+}
+
+#nav-links a {
+	color: var(--color-white);
+	text-decoration: none;
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font16);
+}
+#nav-links a:hover {
+    transform: scale(1.5);
+    border-bottom: var(--border-width-link) solid var(--font-color);
+}
+
+/* The Mobile X */
+#mobileClose {
+	display: hidden;
+}
+
+
+
+
+
 /* switch button for dark/light theme */
 .switch {
     position: relative;
@@ -451,7 +495,7 @@ span {
 }
 
 .modal-content {
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	max-height: 65vh;
 }
 
@@ -488,18 +532,16 @@ span {
 }
 
 /*read me button */
-.btn-read-me {
+/* .btn-read-me {
 	background-color: transparent;
 	color: white;
 	border: none;
 	margin: var(--spacing-med) 0;
 	font-size: 20px;
-}
+} */
 
 /* hover effect on all footer links */
-.btn-read-me:hover {
-	border-bottom: 2px solid var(--color-white);
-}
+
 
 
 
@@ -545,8 +587,6 @@ span {
 }
 /* skills links */
 .skills-title {
-    /* border: 2px solid red; */
-    /* min-width: 300px; */
     list-style-type: none;
     font-size: var(--font-sm);
     display: flex;
@@ -563,7 +603,7 @@ span {
 
 .skills-title span {
     font-size: 2.5rem;
-    /* transition: all 0.1 ease-in-out; */
+
 }
 
 .skills-title span:hover {
@@ -620,7 +660,6 @@ span {
     font-size: var(--font-xxs);
     font-weight: var(--heavy-weight);
     text-transform: uppercase;
-    /* margin-top: 20%; */
     padding-top: 100px;
     cursor: pointer;
     display: flex;
@@ -634,10 +673,6 @@ span {
     color: var(--font-color);
 }
 
-/* .form-input input{
-    max-width: 80%;
-    
-} */
 /* footer */
 .footer-text {
     font-size: var(--font-xxs);
@@ -656,12 +691,7 @@ span {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-    /* .skills-wrap {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-    } */
+ 
     /* skills section in tablet */
     .skills-title {
         flex-basis: 50%;
@@ -674,6 +704,20 @@ span {
         background-color: white;
         color: black;
     }
+    .shan-co-logo p {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .top-bar {
+        background-color: white;
+        color: black;
+    }
+    .desktop-nav a:hover {
+        transform: scale(1.5);
+        border-bottom: var(--border-width-link) solid var(--font-color);
+    }
+    
     /* icon styling */
     .linkedin-icon .icon-background {
         fill: black;
@@ -707,57 +751,72 @@ span {
     input[type="text"],
     input[type="email"],
     textarea {
-    border: 2px solid #c6c6c6;
-    background-color: rgb(209, 206, 206);
-	border-radius: 5px;
-	padding: 8px;
-    margin: 10px auto;
-	font-family: var(--font-main)
+    
+        border: 2px solid #c6c6c6;
+        background-color: rgb(209, 206, 206);
+	    border-radius: 5px;
+	    padding: 8px;
+        margin: 10px auto;
+	    font-family: var(--font-main)
     }
 
     /* navigation */
 
-    .nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        /* justify-content: flex-end;
-        text-decoration: none;
-        margin: 0 auto;
-        padding: var(--spacing-s);
-        gap: var(--spacing-s);
-        list-style-type: none; */
-    }
+    #menu-container {
+		display: none;
+	}
 
-    .nav-menu {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        position: static;
+	.desktop-menu {
+		display: flex;
+	}
 
-    }
-
-    .nav-link {
-        font-size: 30px;
-        font-weight: var(--heavy-weight);
-        color: var(--font-color);
-        margin: 0 auto;
-    }
+	/* top bar positioning */
+	header {
+		position: relative;
+	}
     
-    .nav-link:hover {
-        /* color: var(--font-color); */
-        /* transform: scale(1.2); */
-        border-bottom: var(--border-width-link) solid var(--font-color);
-        text-decoration: none;
-    }
+	.top-bar {
+		position: absolute;
+		width: 100%;
+		z-index: 20;
+        padding: 40px 20px;
+	}
 
-    .nav p {
-        font-size: 30px;
-    }
+	.top-bar {
+		position: relative;
+	}
 
-    .hamburger-menu {
-        display: none;
-    }
+	.dp-wrapper .button2 {
+		font-family: var(--main-font);
+		display: flex;
+		width: 194px;
+		height: 50px;
+		padding: 10px 40px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-shrink: 0;
+		border-radius: 10px;
+		background: var(--button2-color);
+		color: var(--color-white);
+		cursor: pointer;
+		border: none;
+		font-size: var(--font21);
+		font-weight: var(--font-weight-bold);
+		line-height: var(--line-height32);
+	}
+
+	.dp-wrapper {
+        width: var(--desktop-wrapper-width);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo-icon {
+		min-width: 205px;
+	}
+	/* header */
 
     .social a img:hover {
         transform: scale(1.2);
@@ -804,7 +863,6 @@ span {
     .skills-list2 {
             display: flex;
             flex-direction: column;
-            /* justify-content: ; */
             width: 50%;
     }
     
@@ -812,8 +870,6 @@ span {
         font-size: 2rem;
         font-weight: var(--heavy-weight);
     }
-
-    
 }
 
 @media only screen and (min-width: 1024px) {
@@ -851,9 +907,6 @@ span {
 		flex-direction: row;
 		justify-content: space-evenly;
         max-width: 1000px;
-
-        
-		
 	}
 
     .contact a {
