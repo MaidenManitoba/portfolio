@@ -34,16 +34,16 @@ mobileMenu.addEventListener("click", function () {
 
 
 // light/dark mode
-const switchPage = document.querySelector(".switch");
-// Switch to Light Mode
-switchPage.switchLight = () => {
-    const toggleLight = $('#light-dark');
+// const switchPage = document.querySelector(".switch");
 
-    toggleLight.on('click', function(){
-        $('body').toggleClass('light');
+// switchPage.switchLight = () => {
+//     const toggleLight = $('#light-dark');
 
-    })
-}
+//     toggleLight.on('click', function(){
+//         $('body').toggleClass('light');
+
+//     })
+// }
 
 // modal variables
 const modal = document.querySelector(".modal");

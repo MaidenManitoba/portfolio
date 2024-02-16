@@ -113,6 +113,7 @@ h2 {
     display: flex;
     justify-content: center;
     line-height: 65px;
+    gap: 10px;
 }
 
 p {
@@ -144,7 +145,8 @@ button {
     font-weight: var(--heavy-weight);
     align-items: center;
     border-radius: 10px;
-    padding: var(--spacing-s);
+    border: 2px solid var(--font-color);
+    padding: var(--spacing-s) 50px;
     margin: 60px auto;
 }
 
@@ -154,6 +156,7 @@ button, input {
 
 button:hover {
     color: white;
+    border: var(--font-color);
 }
 
 a {
@@ -246,7 +249,7 @@ textarea {
 	padding: 10px 20px;
 }
 
-.dp-wrapper .button2 {
+.dp-wrapper  {
 	display: none;
 }
 
@@ -721,6 +724,17 @@ span {
         font-weight: 500;
     }
 
+    button {
+        background-color: var(--font-color);
+        color: var(--bg-color);
+        font-weight: var(--heavy-weight);
+        align-items: center;
+        border-radius: 10px;
+        border: 2px solid var(--font-color);
+        padding: var(--spacing-s) 50px;
+        margin: 60px auto;
+    }
+
     .slider {
   
         background-color: black;
@@ -814,7 +828,7 @@ span {
 		position: relative;
 	}
 
-	.dp-wrapper .button2 {
+	.dp-wrapper  {
 		font-family: var(--main-font);
 		display: flex;
 		width: 194px;
@@ -825,10 +839,10 @@ span {
 		gap: 10px;
 		flex-shrink: 0;
 		border-radius: 10px;
-		background: var(--button2-color);
+		/* background: var(--button2-color);
 		color: var(--color-white);
 		cursor: pointer;
-		border: none;
+		border: none; */
 		font-size: var(--font21);
 		font-weight: var(--font-weight-bold);
 		line-height: var(--line-height32);
